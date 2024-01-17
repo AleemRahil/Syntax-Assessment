@@ -1,0 +1,33 @@
+[tool.poetry]
+
+name        = "Syntax IAP Interview"
+version     = "0.2.0"
+description = "Technical interview questions to evaluate the seniority of candidates."
+authors     = ["Damien Levac <damien.levac@syntax.com>"]
+
+[tool.poetry.dependencies]
+
+python   = "^3.8"
+
+flask    = "^2.0"
+requests = "^2.25"
+rich     = "^10.12"
+
+[tool.poetry.dev-dependencies]
+
+black          = "^21.4b0"
+isort          = "^5.4"
+mypy           = "^0.910"
+pylint         = "^2.5"
+types-requests = "^2.25"
+
+[tool.black]
+
+line-length    = 120
+target-version = ["py38"]
+
+[tool.pylint."MESSAGES CONTROL"]
+
+disable = [
+    "line-too-long",
+]
